@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Portfolio Content Editor</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#0b0f17;color:#e9f1ff;margin:0;padding:24px}
+    .wrap{max-width:1100px;margin:0 auto}
+    h1{margin:0 0 12px;font-size:24px}
+    .row{display:flex;gap:16px;align-items:center}
+    textarea{width:100%;height:520px;background:#0e1420;color:#dff3ff;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px;font-size:14px}
+    .bar{display:flex;gap:10px;margin:12px 0 20px}
+    button{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:#101826;color:#eaf6ff;font-weight:800;cursor:pointer}
+    button:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.35)}
+    .tips{font-size:13px;color:#a8c4df}
+    .mini{font-size:12px;color:#88a9c7}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{background:#0e1420;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px}
+    .card h3{margin:6px 0 8px}
+    input,select{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,.12);background:#0c1220;color:#dff3ff;width:100%}
+    label{font-size:12px;color:#a8c4df}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Portfolio Content Editor</h1>
+    <div class="tips">Edit the JSON below and click <b>Download content.json</b>. Replace the file in your site, push to GitHub Pages/Netlify, and your portfolio updates automatically.</div>
+    <div class="bar">
+      <button id="load">Load current content.json</button>
+      <button id="format">Format JSON</button>
+      <button id="download">Download content.json</button>
+    </div>
+    <textarea id="json"></textarea>
+    <p class="mini">Tip: You can also use the File System Access API (Chrome/Edge) to save directly over the file.</p>
+  </div>
+
+  <script>
+    const area = document.getElementById('json');
+
+    async function loadContent(){
+      try{
+        const res = await fetch('content.json', {cache: 'no-store'});
+        if(!res.ok) throw new Error('not ok');
+        const data = await res.json();
+        area.value = JSON.stringify(data, null, 2);
+      }catch(e){
+        alert('Could not fetch content.json. If you are opening this file locally, place admin.html next to content.json or serve via a local server.');
+      }
+    }
+
+    function formatJSON(){
+      try{
+        const obj = JSON.parse(area.value);
+        area.value = JSON.stringify(obj, null, 2);
+      }catch(e){
+        alert('Invalid JSON: ' + e.message);
+      }
+    }
+
+    function downloadFile(){
+      try{
+        const obj = JSON.parse(area.value);
+        const blob = new Blob([JSON.stringify(obj, null, 2)], {type:'application/json'});
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'content.json';
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }catch(e){
+        alert('Fix JSON before downloading. ' + e.message);
+      }
+    }
+
+    document.getElementById('load').addEventListener('click', loadContent);
+    document.getElementById('format').addEventListener('click', formatJSON);
+    document.getElementById('download').addEventListener('click', downloadFile);
+
+    // Autofill on open
+    loadContent();
+  </script>
+</body>
+</html>

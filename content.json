@@ -1,0 +1,121 @@
+{
+  "profile": {
+    "name": "Talal Ahmad Saleemi",
+    "title": "HIPAA‑Certified Medical Billing / RCM Analyst (AR Specialist)",
+    "location": "Faisalabad, Pakistan",
+    "phone": "+92 306 6399895",
+    "email": "Miantalal2@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/talal-ahmad-37b791150/",
+    "about": "Results‑driven RCM/AR specialist with end‑to‑end medical billing experience: AR follow‑ups, denial prevention and appeals, rejections, eligibility/benefits verification, and payment posting. Known for improving first‑pass acceptance and reducing AR days via clean‑claim workflows, analytics, and payer‑specific playbooks. HIPAA‑certified and focused on compliance and documentation quality."
+  },
+  "skills": {
+    "professional": [
+      "Revenue Cycle Management (RCM)",
+      "Accounts Receivable (AR) follow‑up",
+      "Denial management & appeals",
+      "Rejections handling / claim edits",
+      "Eligibility & benefits verification",
+      "Payment posting (ERA/EOB)",
+      "RCM reporting & dashboards",
+      "Communication & client updates"
+    ],
+    "personal": [
+      "Detail‑oriented & accuracy",
+      "Time management",
+      "Team leadership & coaching",
+      "Problem solving",
+      "Professional communication"
+    ],
+    "tools": [
+      "CareCloud",
+      "eClinicalWorks (ECW)",
+      "NextGen",
+      "Office Ally",
+      "AdvancedMD",
+      "Claim.MD",
+      "RXNT",
+      "Waystar",
+      "ConnectCenter",
+      "Change Healthcare",
+      "Athenahealth",
+      "Kareo",
+      "Epic",
+      "Cerner",
+      "DrChrono",
+      "Greenway",
+      "Availity"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Team Lead AR",
+      "company": "HBA Services",
+      "city": "Faisalabad, PK",
+      "dates": "Jun 2024 – Present",
+      "bullets": [
+        "Lead multi‑payer AR teams; prioritize inventory across 30/60/90/120+ buckets.",
+        "Implemented pre‑submission scrubs & payer‑specific edits to improve first‑pass acceptance.",
+        "Built dashboards for AR days, denial categories, zero‑pay trends, touch rate.",
+        "Uphold HIPAA and documentation quality; coached analysts on calls & notes."
+      ]
+    },
+    {
+      "role": "AR Representative",
+      "company": "Medcare MSO",
+      "city": "Faisalabad, PK",
+      "dates": "Sep 2021 – Jun 2024",
+      "bullets": [
+        "Managed AR for multi‑specialty accounts; postings (ERA/EOB), rejections, re‑bills & appeals.",
+        "Performed eligibility & benefits verification to mitigate COB and coverage gaps.",
+        "Accelerated payer follow‑ups with scripts & templates for faster resolution."
+      ]
+    },
+    {
+      "role": "Data Entry Operator",
+      "company": "TCS (Tranzum Courier Service)",
+      "city": "Faisalabad, PK",
+      "dates": "Sep 2019 – Sep 2021",
+      "bullets": [
+        "Maintained high‑volume data accuracy, reporting, and process documentation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master in Commerce (M.COM)",
+      "school": "University of Agriculture Faisalabad",
+      "years": "2019 – 2021",
+      "badges": [
+        "CGPA 3.54",
+        "Commerce & Finance"
+      ]
+    },
+    {
+      "degree": "Bachelor in Commerce (B.COM)",
+      "school": "Govt. College of Commerce, Peoples Colony, Faisalabad (PU)",
+      "years": "2016 – 2018",
+      "badges": [
+        "2nd Division",
+        "Business & Accounts"
+      ]
+    },
+    {
+      "degree": "Diploma in Commerce (D.COM)",
+      "school": "Govt. College of Commerce, Peoples Colony, Faisalabad",
+      "years": "2013 – 2015",
+      "badges": [
+        "1st Division",
+        "Commerce"
+      ]
+    }
+  ],
+  "certifications": [
+    "HIPAA Certification (2023)",
+    "Data Analysis (2020)",
+    "Computer Software & Hardware (2016)",
+    "Advanced Excel (2016)"
+  ],
+  "theme": {
+    "default": "ocean"
+  }
+}

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Talal Ahmad Saleemi — RCM Analyst | AR Specialist</title>
+  <meta name="description" content="Portfolio of Talal Ahmad Saleemi — Medical Billing & RCM Analyst, AR Specialist, Denial Management & Rejections Expert. HIPAA Certified.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0b0f14; --bg2:#0a0d12;
+      --panel:#0f141b;
+      --muted:#98a2b3; --text:#e6eef8;
+      --brand:#22c3ff; --brand-2:#00b2ff;
+      --ring: rgba(34,195,255,.35);
+      --radius:20px; --shadow: 0 10px 30px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.05) inset;
+    }
+    [data-theme="emerald"]{ --brand:#22ff88; --brand-2:#00cc66; --ring:rgba(34,255,136,.35); --bg1:#08110d; --bg2:#070d0a; }
+    
+    [data-theme="sunset"]{ --brand:#ff9966; --brand-2:#ff6633; --ring:rgba(255,153,102,.35); --bg1:#140d0a; --bg2:#100a08; }
+    
+    
+    
+    [data-theme="gold"]{ --brand:#ffd166; --brand-2:#f4b400; --ring:rgba(255,209,102,.35); --bg1:#141107; --bg2:#100d05; }
+    [data-theme="crimson"]{ --brand:#ff4d6d; --brand-2:#c9184a; --ring:rgba(255,77,109,.35); --bg1:#14090c; --bg2:#0f0709; }
+
+    [data-theme="slate"]{ --brand:#8fb3ff; --brand-2:#5d87ff; --ring:rgba(141,176,255,.35); --bg1:#0a0c12; --bg2:#080a0f; }
+    
+    
+    
+    
+    
+    
+    
+    
+
+    *{box-sizing:border-box}
+    html,body{margin:0;background:
+      radial-gradient(1200px 800px at 80% -20%, var(--ring), transparent 60%),
+      linear-gradient(180deg, var(--bg1), var(--bg2));
+      color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;scroll-behavior:smooth}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1400px, 98%);margin-inline:auto;position:relative}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(11,15,20,.7);backdrop-filter: blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px}
+    .brand-logo{width:38px;height:38px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 12px 30px var(--ring)}
+    .brand-logo svg{filter:drop-shadow(0 2px 6px rgba(0,0,0,.5))}
+    .menu{display:flex;gap:22px;align-items:center}
+    .menu a{padding:8px 12px;border-radius:12px;transition:.2s}
+    .menu a:hover{background:rgba(255,255,255,.06)}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;background:linear-gradient(180deg,var(--brand),var(--brand-2));color:#081018;font-weight:700;box-shadow:0 10px 28px var(--ring);transition:transform .15s ease, box-shadow .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px var(--ring)}
+    .menu .btn:hover{background:#fff;color:#000}
+
+    section{padding:70px 0;position:relative}
+    section::before{display:none}
+    section:hover::before{opacity:.9}
+    .section-title{font-size:26px;font-weight:800;margin:0 0 22px 0;display:flex;align-items:center;gap:12px}
+    .section-title .dot{width:9px;height:9px;border-radius:999px;background:var(--brand);box-shadow:0 0 0 6px color-mix(in oklab, var(--brand) 25%, transparent);transition:transform .25s ease}
+    section:hover .section-title .dot{transform:scale(1.6)}
+
+    .hero{padding:72px 0 44px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}
+    .tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--brand);padding:8px 12px;border-radius:999px;font-weight:700;letter-spacing:.2px}
+    .title{font-family:Poppins,Inter,system-ui,sans-serif;font-size:clamp(28px, 4vw, 46px);line-height:1.1;margin:14px 0 12px}
+    .title .highlight{background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{color:var(--muted);font-size:18px;line-height:1.7}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,0));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .24s}
+    .hero-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.45), 0 0 0 1px color-mix(in oklab, var(--brand) 40%, transparent)}
+
+    .avatar-wrap{width:180px;aspect-ratio:1/1;border-radius:999px;padding:3px;background:
+      conic-gradient(from 200deg, var(--brand), var(--brand-2), var(--brand));
+      box-shadow:0 12px 30px var(--ring), 0 0 0 1px rgba(255,255,255,.06) inset;margin-bottom:14px}
+    .avatar{width:100%;height:100%;border-radius:inherit;object-fit:cover;filter:saturate(1.05) contrast(1.02)}
+    .chip-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .chip{padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.04);color:#cfe9ff;transition:transform .18s ease, box-shadow .24s}
+    .chip:hover{transform:translateY(-3px);box-shadow:0 12px 22px var(--ring)}
+
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:18px;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .24s}
+    .card:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 18px 36px rgba(0,0,0,.45), 0 0 12px var(--ring)}
+    .muted{color:var(--muted)}
+
+    .timeline{position:relative;margin-left:4px}
+    .timeline:before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand), transparent)}
+    .t-item{position:relative;margin-left:36px;margin-bottom:18px;padding:14px 16px;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:16px;transition:transform .18s ease, box-shadow .24s}
+    .t-item:before{content:"";position:absolute;left:-24px;top:18px;width:12px;height:12px;border-radius:999px;background:var(--brand);box-shadow:0 0 0 6px color-mix(in oklab, var(--brand) 35%, transparent)}
+
+    .skill-pills{display:flex;flex-wrap:wrap;gap:10px}
+    
+.pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:#d3f2ff;padding:10px 12px;border-radius:999px;font-weight:700;transition:transform .18s ease, box-shadow .24s, background .2s ease, border-color .2s ease}
+.pill:hover{transform:translateY(-3px);box-shadow:0 12px 22px var(--ring);background:linear-gradient(90deg,var(--brand),var(--brand-2));border-color:color-mix(in oklab,var(--brand) 50%,transparent);color:#081018}
+
+
+    .toolgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+    .tool{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;text-align:center;font-weight:700;transition:transform .18s ease, box-shadow .24s}
+    .tool:hover{transform:translateY(-4px);box-shadow:0 14px 26px var(--ring)}
+
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    .contact .panel{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:20px;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .24s}
+    .contact .panel:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,.45)}
+    label{font-size:13px;color:#cde8ff}
+    input, textarea{width:100%;padding:12px 14px;border-radius:12px;background:#0b1016;color:var(--text);border:1px solid rgba(255,255,255,.14);outline:none}
+    input:focus, textarea:focus{border-color:var(--brand);box-shadow:0 0 0 4px color-mix(in oklab, var(--brand) 20%, transparent)}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .small{font-size:12px;color:#b7c7d6}
+
+    .theme-fab{position:fixed;bottom:18px;right:18px;z-index:120;background:linear-gradient(180deg,var(--brand),var(--brand-2));color:#081018;border:none;border-radius:50%;width:52px;height:52px;font-weight:800;box-shadow:0 12px 28px var(--ring);cursor:pointer;display:grid;place-items:center}
+    .theme-panel{position:fixed;bottom:82px;right:18px;width:280px;background:var(--panel);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:12px;box-shadow:0 16px 40px rgba(0,0,0,.5);backdrop-filter:blur(8px);z-index:120;display:none}
+    .theme-panel.open{display:block}
+    .theme-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .theme-card{display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px;background:rgba(255,255,255,.04);cursor:pointer;transition:transform .18s ease, box-shadow .24s}
+    .theme-card:hover{transform:translateY(-3px);box-shadow:0 12px 22px var(--ring)}
+    .swatch{width:28px;height:28px;border-radius:50%;border:1px solid rgba(255,255,255,.25);}
+    .swatch.ocean{background:linear-gradient(135deg,#22c3ff,#00b2ff)}
+    .swatch.emerald{background:linear-gradient(135deg,#22ff88,#00cc66)}
+    .swatch.amethyst{background:linear-gradient(135deg,#aa66ff,#7733cc)}
+    .swatch.sunset{background:linear-gradient(135deg,#ff9966,#ff6633)}
+    .swatch.rose{background:linear-gradient(135deg,#ff6ea8,#ff3e8c)}
+    .swatch.cyber{background:linear-gradient(135deg,#00fff0,#ff00e5)}
+    .theme-title{font-weight:800}
+
+    @media (prefers-reduced-motion:no-preference){
+      .card,.t-item,.section-title,.menu a { transition: transform .35s ease, box-shadow .35s ease, background .35s ease, opacity .35s ease; }
+      .card:hover{ transform: translateY(-6px); }
+      .menu a:hover{ transform: translateY(-2px); }
+      .reveal{opacity:0; transform: translateY(12px); animation: rise .6s .05s both ease-out;}
+      .reveal:nth-child(2){animation-delay:.12s}
+      .reveal:nth-child(3){animation-delay:.18s}
+      .reveal:nth-child(4){animation-delay:.24s}
+      @keyframes rise{to{opacity:1; transform:none}}
+    }
+    footer{padding:26px 0;color:#b7c7d6;border-top:1px solid rgba(255,255,255,.06)}
+
+    @media (max-width: 960px){
+      .hero-grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr 1fr}
+      .toolgrid{grid-template-columns:repeat(3,1fr)}
+      .contact{grid-template-columns:1fr}
+    }
+    @media (max-width: 640px){
+      .menu{display:none}
+      .cards{grid-template-columns:1fr}
+      .toolgrid{grid-template-columns:repeat(2,1fr)}
+      .row{grid-template-columns:1fr}
+      .avatar-wrap{width:150px}
+      .theme-panel{right:10px;width:260px}
+    }
+  
+/* --- Redesigned EDUCATION --- */
+.edu-wrap{position:relative}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.edu{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;padding:18px 18px 18px 58px;box-shadow:var(--shadow);transition:transform .2s ease, box-shadow .25s}
+.edu:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,.45),0 0 0 1px color-mix(in oklab,var(--brand) 40%,transparent)}
+.edu:before{content:"";position:absolute;left:14px;top:22px;width:14px;height:14px;border-radius:50%;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 0 0 8px color-mix(in oklab,var(--brand) 30%,transparent)}
+.edu .title{font-weight:800;font-size:18px;margin:0}
+.edu .inst{color:#cfe9ff;margin-top:6px}
+.edu .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.badge{font-weight:700;font-size:12px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12)}
+@media(max-width:960px){.edu-grid{grid-template-columns:1fr}}
+
+
+/* --- Unified card style for Education & Experience --- */
+.timeline-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.timeline-card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px 18px 18px 58px;box-shadow:var(--shadow);
+  transition:transform .2s ease, box-shadow .25s}
+.timeline-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,.45),0 0 0 1px color-mix(in oklab,var(--brand) 40%,transparent)}
+.timeline-card:before{content:"";position:absolute;left:14px;top:22px;width:14px;height:14px;border-radius:50%;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 0 0 8px color-mix(in oklab,var(--brand) 30%,transparent)}
+.timeline-card .title{font-weight:800;font-size:18px;margin:0}
+.timeline-card .inst{color:#cfe9ff;margin-top:6px}
+.timeline-card .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+@media(max-width:960px){.timeline-grid{grid-template-columns:1fr}}
+
+
+
+.pill{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:#d3f2ff;padding:10px 12px;border-radius:999px;font-weight:700;transition:transform .18s ease, box-shadow .24s, background .2s ease, border-color .2s ease}
+.pill:hover{transform:translateY(-3px);box-shadow:0 12px 22px var(--ring);background:linear-gradient(90deg,var(--brand),var(--brand-2));border-color:color-mix(in oklab,var(--brand) 50%,transparent);color:#081018}
+
+
+
+/* Compact theme chooser */
+.theme-panel{width:460px}
+.theme-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.theme-btn{display:grid;place-items:center;padding:12px;border-radius:12px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);cursor:pointer;
+  transition:transform .18s ease, box-shadow .24s, background .2s ease}
+.theme-btn:hover{transform:translateY(-3px);box-shadow:0 12px 22px var(--ring);background:rgba(255,255,255,.06)}
+.theme-dot{width:18px;height:18px;border-radius:50%;border:1px solid rgba(255,255,255,.25)}
+.theme-dot.ocean{background:linear-gradient(135deg,#22c3ff,#00b2ff)}
+.theme-dot.emerald{background:linear-gradient(135deg,#22ff88,#00cc66)}
+.theme-dot.sunset{background:linear-gradient(135deg,#ff9966,#ff6633)}
+.theme-dot.gold{background:linear-gradient(135deg,#ffd166,#f4b400)}
+.theme-dot.crimson{background:linear-gradient(135deg,#ff4d6d,#c9184a)}
+.theme-dot.slate{background:linear-gradient(135deg,#8fb3ff,#5d87ff)}
+.theme-label{font-weight:800;font-size:12px;margin-top:6px}
+
+
+/* Compact theme chooser with gradient buttons */
+.theme-panel{width:460px}
+.theme-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.theme-btn{display:grid;place-items:center;height:64px;border-radius:14px;color:#081018;
+  border:1px solid rgba(255,255,255,.15);box-shadow:0 10px 24px var(--ring);
+  font-weight:800;cursor:pointer;transition:transform .18s ease, box-shadow .24s, filter .2s ease}
+.theme-btn .theme-label{background:rgba(255,255,255,.85);padding:4px 8px;border-radius:999px;font-size:12px}
+.theme-btn:hover{transform:translateY(-3px);filter:saturate(1.1) brightness(1.02)}
+.theme-btn.ocean{background:linear-gradient(135deg,#22c3ff,#00b2ff)}
+.theme-btn.emerald{background:linear-gradient(135deg,#22ff88,#00cc66)}
+.theme-btn.sunset{background:linear-gradient(135deg,#ff9966,#ff6633)}
+.theme-btn.gold{background:linear-gradient(135deg,#ffd166,#f4b400)}
+.theme-btn.crimson{background:linear-gradient(135deg,#ff4d6d,#c9184a)}
+.theme-btn.slate{background:linear-gradient(135deg,#8fb3ff,#5d87ff)}
+@media(max-width:640px){.theme-panel{width:96vw}.theme-grid{grid-template-columns:repeat(3,1fr)}}
+
+
+/* Inline theme chooser in navbar */
+.theme-inline{display:flex;align-items:center;gap:8px;margin-right:8px}
+.theme-inline .sw{width:16px;height:16px;border-radius:50%;border:1px solid rgba(255,255,255,.4);cursor:pointer;transition:transform .15s ease, box-shadow .2s}
+.theme-inline .sw:hover{transform:translateY(-2px);box-shadow:0 8px 18px var(--ring)}
+.theme-inline .sw.ocean{background:linear-gradient(135deg,#22c3ff,#00b2ff)}
+.theme-inline .sw.emerald{background:linear-gradient(135deg,#22ff88,#00cc66)}
+.theme-inline .sw.sunset{background:linear-gradient(135deg,#ff9966,#ff6633)}
+.theme-inline .sw.gold{background:linear-gradient(135deg,#ffd166,#f4b400)}
+.theme-inline .sw.crimson{background:linear-gradient(135deg,#ff4d6d,#c9184a)}
+.theme-inline .sw.slate{background:linear-gradient(135deg,#8fb3ff,#5d87ff)}
+
+
+
+</style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l7 3v6c0 5.25-3.4 8.97-7 10-3.6-1.03-7-4.75-7-10V5l7-3z" fill="white" opacity=".9"/>
+            <path d="M9 12l2 2 4-4" stroke="#0b0f14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span>Talal Ahmad Saleemi</span>
+      </div>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <div class="theme-inline" aria-label="Theme chooser in menu"><button class="sw ocean" data-theme="ocean" title="Ocean"></button><button class="sw emerald" data-theme="emerald" title="Emerald"></button><button class="sw sunset" data-theme="sunset" title="Sunset"></button><button class="sw gold" data-theme="gold" title="Gold"></button><button class="sw crimson" data-theme="crimson" title="Crimson"></button><button class="sw slate" data-theme="slate" title="Slate"></button></div><a class="btn" href="https://www.linkedin.com/in/talal-ahmad-37b791150/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <span class="tag">RCM Analyst • AR Specialist</span>
+          <h1 class="title">HIPAA‑certified Medical Billing professional driving <span class="highlight">clean claims & faster reimbursements</span>.</h1>
+          <p class="sub">Experienced across end‑to‑end Revenue Cycle Management, payer follow‑ups, denial prevention, clean claim strategies, and reporting. I lead teams to reduce AR days and uplift first‑pass acceptance.</p>
+          <div class="chip-row" aria-label="Highlights">
+            <span class="chip">Denial Management</span>
+            <span class="chip">Rejections Expert</span>
+            <span class="chip">Eligibility & Benefits</span>
+            <span class="chip">Payment Posting</span>
+            <span class="chip">RCM Reporting</span>
+          </div>
+          <div style="margin-top:18px" class="small">I work as <strong class="word-rotator" aria-live="polite">
+            <span class="active">Team Lead AR</span>
+            <span>RCM Analyst</span>
+            <span>HIPAA Certified</span>
+            <span>Denial Management</span>
+            <span>Rejections Expert</span>
+          </strong></div>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="#contact">Let’s Talk</a>
+            <a class="btn" style="background:linear-gradient(180deg,#0af,#07f);color:#fff" href="Talal_CV_2025.pdf" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <div class="avatar-wrap" aria-hidden="true">
+              <img class="avatar" src="images/profile.jpg" alt="Portrait of Talal Ahmad Saleemi" loading="lazy" />
+            </div>
+            <div>
+              <h3 style="margin:0 0 4px 0">Talal Ahmad Saleemi</h3>
+              <div class="muted">Team Lead AR • HIPAA Certified</div>
+            </div>
+          </div>
+
+          <h3 style="margin:18px 0 10px 0">Quick metrics</h3>
+          <div class="cards" style="grid-template-columns:repeat(2,1fr);gap:12px">
+            <div class="card reveal" style="padding:14px">
+              <div class="muted">Claim Acceptance</div>
+              <div style="font-weight:800;font-size:22px">98%+</div>
+              <div class="small">first-pass on select projects</div>
+            </div>
+            <div class="card reveal" style="padding:14px">
+              <div class="muted">AR Days</div>
+              <div style="font-weight:800;font-size:22px">↓ 12–18%</div>
+              <div class="small">reduction through workflows</div>
+            </div>
+            <div class="card reveal" style="padding:14px">
+              <div class="muted">Payer Touches</div>
+              <div style="font-weight:800;font-size:22px">3× faster</div>
+              <div class="small">via queue prioritization</div>
+            </div>
+            <div class="card reveal" style="padding:14px">
+              <div class="muted">Specialties</div>
+              <div style="font-weight:800;font-size:22px">Multi-specialty</div>
+              <div class="small">OP/IP, diagnostics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2 class="section-title"><span class="dot"></span> About me</h2>
+      <div class="cards" style="grid-template-columns:1.2fr .8fr">
+        <div class="card reveal">
+          <p>
+            I am a <strong>HIPAA‑certified</strong> <strong>Medical Billing / RCM Analyst</strong> and <strong>AR Specialist</strong> with hands‑on expertise in
+            <strong>denial management</strong>, <strong>rejections resolution</strong>, <strong>payer follow‑ups</strong>, <strong>payment posting</strong>,
+            <strong>eligibility & benefits verification</strong>, <strong>claim submission</strong>, and <strong>RCM reporting & analytics</strong>.
+            As <strong>Team Lead AR at HBA Services</strong>, I coach teams on compliance and quality, streamline workflows,
+            and partner with providers to improve clean‑claim rates and cash acceleration.
+          </p>
+          <p class="muted">
+            Tools & platforms: CareCloud, eClinicalWorks (ECW), NextGen, Office Ally, Maximus, AdvancedMD, Claim.MD, RXNT,
+            Waystar, ConnectCenter, Change Healthcare, MS Excel (dashboards & analysis).
+          </p>
+          <div class="skill-pills" aria-label="Badges">
+            <span class="pill">HIPAA Certified</span>
+            <span class="pill">AR Specialist</span>
+            <span class="pill">Denial Prevention</span>
+            <span class="pill">Rejections Expert</span>
+            <span class="pill">RCM Management</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3 style="margin-top:6px">Core services</h3>
+          <ul style="line-height:1.9;margin:8px 0 0 18px">
+            <li>End‑to‑end RCM setup & optimization</li>
+            <li>AR stratification & smart workqueues</li>
+            <li>Denial root‑cause analysis & appeals</li>
+            <li>Eligibility & pre‑auth workflows</li>
+            <li>Payment posting & variance resolution</li>
+            <li>RCM dashboards, KPIs & reporting</li>
+          </ul>
+          <p class="small" style="margin-top:10px">
+            LinkedIn: <a href="https://www.linkedin.com/in/talal-ahmad-37b791150/" target="_blank" rel="noopener">talal-ahmad-37b791150</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+<section id="experience" class="container">
+  <h2 class="section-title"><span class="dot"></span> Experience</h2>
+  <div class="timeline-grid">
+    <div class="timeline-card reveal">
+      <h3 class="title">Team Lead AR — HBA Services</h3>
+      <div class="inst">Faisalabad • June 2024 – Present</div>
+      <ul class="muted" style="margin-top:10px;line-height:1.8">
+        <li>Lead multi-payer AR teams; prioritize high-value inventory across 30/60/90/120+ buckets.</li>
+        <li>Implemented pre-submission scrubs and payer-specific edits to improve first-pass acceptance.</li>
+        <li>Built dashboard reports for AR days, denial categories, zero-pay trends, touch rate.</li>
+        <li>Uphold HIPAA compliance; coached analysts on call etiquette & documentation quality.</li>
+      </ul>
+    </div>
+    <div class="timeline-card reveal">
+      <h3 class="title">AR Representative — Medcare MSO</h3>
+      <div class="inst">Faisalabad • Sept 2021 – June 2024</div>
+      <ul class="muted" style="margin-top:10px;line-height:1.8">
+        <li>Managed AR for multi-specialty accounts; postings (ERA/EOB), rejections, re-bills, and appeals.</li>
+        <li>Performed eligibility & benefits verification to mitigate COB and coverage gaps.</li>
+        <li>Accelerated payer follow-ups with scripts & templates for faster resolution.</li>
+      </ul>
+    </div>
+    <div class="timeline-card reveal">
+      <h3 class="title">Data Entry Operator — TCS (Tranzum Courier Service)</h3>
+      <div class="inst">Faisalabad • Sept 2019 – Sept 2021</div>
+      <ul class="muted" style="margin-top:10px;line-height:1.8">
+        <li>Maintained high-volume data accuracy, reporting, and process documentation across shifts and SLAs.</li>
+      </ul>
+    </div>
+  </div>
+
+<section id="skills" class="container">
+      <h2 class="section-title"><span class="dot"></span> Skills</h2>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Professional</h3>
+          <div class="skill-pills">
+            <span class="pill">RCM Management</span>
+            <span class="pill">Denial Management</span>
+            <span class="pill">AR Follow‑up</span>
+            <span class="pill">Rejections Handling</span>
+            <span class="pill">Payment Posting</span>
+            <span class="pill">Claim Processing</span>
+            <span class="pill">RCM Reporting & Analysis</span>
+            <span class="pill">MS Office</span>
+            <span class="pill">Advanced Excel</span>
+            <span class="pill">Presentation Competency</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3>Personal</h3>
+          <div class="skill-pills">
+            <span class="pill">Problem Solving</span>
+            <span class="pill">Time Management</span>
+            <span class="pill">Teamwork</span>
+            <span class="pill">Creativity & Innovation</span>
+            <span class="pill">Critical Thinking</span>
+            <span class="pill">Communication</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3>Platforms & Tools</h3>
+          <div class="toolgrid">
+            <div class="tool">CareCloud</div>
+            <div class="tool">eCW</div>
+            <div class="tool">NextGen</div>
+            <div class="tool">Office Ally</div>
+            <div class="tool">Maximus</div>
+            <div class="tool">AdvancedMD</div>
+            <div class="tool">Claim.MD</div>
+            <div class="tool">RXNT</div>
+            <div class="tool">Waystar</div>
+            <div class="tool">ConnectCenter</div>
+            <div class="tool">Change Healthcare</div>
+            <div class="tool">Athenahealth</div>
+            <div class="tool">Kareo</div>
+            <div class="tool">Epic</div>
+            <div class="tool">Cerner</div>
+            <div class="tool">DrChrono</div>
+            <div class="tool">Greenway</div>
+            <div class="tool">Availity</div>
+            <div class="tool">Zoho Health</div>
+            <div class="tool">MS Excel / Reporting</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+<section id="education" class="container">
+  <h2 class="section-title"><span class="dot"></span> Education</h2>
+  <div class="timeline-grid">
+    <div class="timeline-card reveal">
+      <h3 class="title">Master in Commerce (M.COM)</h3>
+      <div class="inst">University of Agriculture Faisalabad • 2019 – 2021</div>
+      <div class="meta"><span class="badge">CGPA 3.54</span><span class="badge">Commerce & Finance</span></div>
+    </div>
+    <div class="timeline-card reveal">
+      <h3 class="title">Bachelor in Commerce (B.COM)</h3>
+      <div class="inst">Govt. College of Commerce, Peoples Colony, Faisalabad (PU) • 2016 – 2018</div>
+      <div class="meta"><span class="badge">2nd Division</span><span class="badge">Business & Accounts</span></div>
+    </div>
+    <div class="timeline-card reveal">
+      <h3 class="title">Diploma in Commerce (D.COM)</h3>
+      <div class="inst">Govt. College of Commerce, Peoples Colony, Faisalabad • 2013 – 2015</div>
+      <div class="meta"><span class="badge">1st Division</span><span class="badge">Commerce</span></div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="diplomas" class="container">
+      <h2 class="section-title"><span class="dot"></span> Diplomas & Trainings</h2>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Advanced Excel</h3>
+          <p class="muted">Pivot Tables, dashboards, Power Query, and automation basics.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Computer Software & Hardware</h3>
+          <p class="muted">Operating systems, troubleshooting, MS Office suite, and core hardware.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="container">
+      <h2 class="section-title"><span class="dot"></span> Certifications</h2>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>HIPAA Certification (2023)</h3>
+          <p class="muted">Healthcare compliance & PHI security standards.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Data Analysis (2020)</h3>
+          <p class="muted">Business analytics foundations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="section-title"><span class="dot"></span> Contact</h2>
+      <div class="contact">
+        <div class="panel">
+          <h3>Let’s work together</h3>
+          <p class="muted" style="margin-top:6px">Reach out for RCM audits, AR clean‑up, denial prevention, or long‑term billing support.</p>
+          <form id="contactForm" action="https://formsubmit.co/your@email.here" method="POST" style="margin-top:10px">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New inquiry from Talal’s RCM portfolio" />
+            <div class="row">
+              <div>
+                <label for="name">Full Name</label>
+                <input id="name" name="name" required placeholder="Your name" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required placeholder="you@example.com" />
+              </div>
+            </div>
+            <div style="margin-top:10px">
+              <label for="message">How can I help?</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about your RCM/AR needs"></textarea>
+            </div>
+            <div style="margin-top:14px;display:flex;gap:10px;align-items:center">
+              <button class="btn" type="submit">Send message</button>
+              <span class="small">Or email: <a href="mailto:Miantalal2@gmail.com">Miantalal2@gmail.com</a></span>
+            </div>
+          </form>
+        </div>
+        <div class="panel">
+          <h3>Direct details</h3>
+          <ul style="list-style:none;padding:0;margin:12px 0;line-height:2">
+            <li>📞 <a href="tel:+923066399895">+92 306 6399895</a></li>
+            <li>✉️ <a href="mailto:Miantalal2@gmail.com">Miantalal2@gmail.com</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/in/talal-ahmad-37b791150/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li>📍 National Colony, Jaranwala Rd, Dhudiwala, Faisalabad</li>
+          </ul>
+          <h3 style="margin-top:22px">Availability</h3>
+          <p class="muted">Open to remote roles (Team Lead AR / AR Specialist) and contract projects.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <span>© <span id="year"></span> Talal Ahmad Saleemi — RCM Analyst</span>
+      <span class="muted">“Those who work smart, work as a team.”</span>
+    </div>
+  </footer>
+  <button class="theme-fab" id="themeFab" title="Theme chooser">🎨</button>
+  <div class="theme-panel" id="themePanel" role="dialog" aria-label="Choose color theme">
+    <div class="theme-grid">
+      <button class="theme-btn ocean" data-theme="ocean" title="Ocean"><span class="theme-label">Ocean</span></button>
+      <button class="theme-btn emerald" data-theme="emerald" title="Emerald"><span class="theme-label">Emerald</span></button>
+      <button class="theme-btn sunset" data-theme="sunset" title="Sunset"><span class="theme-label">Sunset</span></button>
+      <button class="theme-btn gold" data-theme="gold" title="Gold"><span class="theme-label">Gold</span></button>
+      <button class="theme-btn crimson" data-theme="crimson" title="Crimson"><span class="theme-label">Crimson</span></button>
+      <button class="theme-btn slate" data-theme="slate" title="Slate"><span class="theme-label">Slate</span></button>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    // Year stamp
+    var y = document.getElementById('year'); if(y){ y.textContent = new Date().getFullYear(); }
+
+    // Word rotator (guarded)
+    var rot = document.querySelector('.word-rotator');
+    if(rot){ 
+      var words = Array.from(rot.children); var i=0;
+      setInterval(function(){ words[i].classList.remove('active'); i=(i+1)%words.length; words[i].classList.add('active'); }, 1800);
+    }
+
+    // Reveal on scroll
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.style.transform='translateY(0)'; e.target.style.opacity=1; io.unobserve(e.target); }
+      });
+    }, {threshold:.1});
+    document.querySelectorAll('.card,.t-item,.section-title').forEach(function(el){
+      el.style.transform='translateY(14px)'; el.style.opacity=0; el.style.transition='all .6s ease'; io.observe(el);
+    });
+
+    // Contact form guard
+    var cf = document.getElementById('contactForm');
+    if(cf){
+      cf.addEventListener('submit', function(e){
+        if(this.action.indexOf('your@email.here')>-1){ e.preventDefault(); alert('Set your email in the form action (FormSubmit) before using the contact form.'); }
+      });
+    }
+
+    // THEME ENGINE
+    var THEME_KEY='talal-theme-v1';
+    var ALLOWED = {'ocean':1,'emerald':1,'sunset':1,'gold':1,'crimson':1,'slate':1};
+    function normalize(id){ return (id && ALLOWED[id]) ? id : 'ocean'; }
+    function applyTheme(id, persist){
+      var theme = normalize(id);
+      document.documentElement.removeAttribute('data-theme');
+      if(theme!=='ocean'){ document.documentElement.setAttribute('data-theme', theme); }
+      if(persist){ try{ localStorage.setItem(THEME_KEY, theme); }catch(e){} }
+    }
+    // initial
+    try{ applyTheme(normalize(localStorage.getItem(THEME_KEY)), false); }catch(e){ applyTheme('ocean', false); }
+
+    // Floating FAB & panel
+    var fab=document.getElementById('themeFab'), panel=document.getElementById('themePanel');
+    if(fab && panel){
+      fab.addEventListener('click', function(){ panel.classList.toggle('open'); });
+      document.addEventListener('click', function(e){ if(panel.classList.contains('open') && !panel.contains(e.target) && e.target!==fab){ panel.classList.remove('open'); }});
+    }
+
+    // Panel buttons
+    document.querySelectorAll('.theme-btn').forEach(function(btn){
+      btn.addEventListener('mouseenter', function(){ applyTheme(btn.dataset.theme, false); });
+      btn.addEventListener('mouseleave', function(){ try{ applyTheme(normalize(localStorage.getItem(THEME_KEY)), false); }catch(e){ applyTheme('ocean', false); } });
+      btn.addEventListener('click', function(){ applyTheme(btn.dataset.theme, true); if(panel) panel.classList.remove('open'); });
+    });
+
+    // Navbar inline swatches
+    document.querySelectorAll('.theme-inline .sw').forEach(function(sw){
+      sw.addEventListener('mouseenter', function(){ applyTheme(sw.dataset.theme, false); });
+      sw.addEventListener('mouseleave', function(){ try{ applyTheme(normalize(localStorage.getItem(THEME_KEY)), false); }catch(e){ applyTheme('ocean', false); } });
+      sw.addEventListener('click', function(){ applyTheme(sw.dataset.theme, true); });
+    });
+  })();
+  </script>
+
+  <script src="update-portfolio.js" defer></script>
+</body>
+</html>
